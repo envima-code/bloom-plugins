@@ -3,7 +3,7 @@
   "mcpServers": {
     "bloom": {
       "type": "streamable-http",
-      "url": "https://apartment-holland-reprint-sciences.trycloudflare.com/mcp"
+      "url": "https://service.envima.de/bloom-staging/mcp"
     }
   }
 }
