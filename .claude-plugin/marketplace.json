@@ -1,0 +1,15 @@
+{
+  "name": "envima",
+  "description": "Plugins der envima GbR für Claude, zuerst Bloom (LCA).",
+  "owner": {
+    "name": "envima GbR",
+    "url": "https://envima.de"
+  },
+  "plugins": [
+    {
+      "name": "bloom",
+      "source": "./plugins/bloom",
+      "description": "Bloom-LCA in Claude und ChatGPT: eigene Ökobilanz-Modelle auflisten, lesen und mit Bloom berechnen. Nur lesend, Anmeldung mit dem Bloom-Konto."
+    }
+  ]
+}

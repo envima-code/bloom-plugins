@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "bloom": {
+      "type": "http",
+      "url": "https://apartment-holland-reprint-sciences.trycloudflare.com/mcp"
+    }
+  }
+}

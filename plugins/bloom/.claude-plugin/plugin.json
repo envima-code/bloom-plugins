@@ -1,0 +1,10 @@
+{
+  "name": "bloom",
+  "description": "Bloom-LCA in Claude und ChatGPT: eigene Ökobilanz-Modelle auflisten, lesen und mit Bloom berechnen. Nur lesend, Anmeldung mit dem Bloom-Konto.",
+  "version": "0.1.0",
+  "author": {
+    "name": "envima GbR",
+    "url": "https://envima.de"
+  },
+  "homepage": "https://github.com/envima-code/bloom-plugins"
+}

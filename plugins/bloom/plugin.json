@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "bloom",
+  "version": "0.1.0",
+  "description": "Bloom-LCA in Claude und ChatGPT: eigene Ökobilanz-Modelle auflisten, lesen und mit Bloom berechnen. Nur lesend, Anmeldung mit dem Bloom-Konto.",
+  "author": {
+    "name": "envima GbR"
+  },
+  "homepage": "https://envima.de",
+  "repository": "https://github.com/envima-code/bloom-plugins",
+  "keywords": [
+    "lca",
+    "pcf",
+    "co2",
+    "nachhaltigkeit"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Bloom",
+        "category": "Productivity"
+      }
+    }
+  }
+}

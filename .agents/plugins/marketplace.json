@@ -1,0 +1,20 @@
+{
+  "name": "envima",
+  "interface": {
+    "displayName": "envima"
+  },
+  "plugins": [
+    {
+      "name": "bloom",
+      "source": {
+        "source": "local",
+        "path": "./plugins/bloom"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
