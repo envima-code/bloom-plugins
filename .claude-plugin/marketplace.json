@@ -9,7 +9,7 @@
     {
       "name": "bloom",
       "source": "./plugins/bloom",
-      "description": "Bloom-LCA in Claude und ChatGPT: eigene Ökobilanz-Modelle auflisten, lesen und mit Bloom berechnen. Nur lesend, Anmeldung mit dem Bloom-Konto."
+      "description": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen."
     }
   ]
 }
