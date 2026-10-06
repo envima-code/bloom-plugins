@@ -3,8 +3,6 @@
 Verbindet [Bloom](https://envima.de), das LCA-Werkzeug der envima GbR, mit Claude und ChatGPT. Danach lassen sich im
 Chat die eigenen Ökobilanz-Modelle auflisten, ansehen und mit Bloom berechnen.
 
-> **Vorschau.** Die Verbindung zeigt auf das Staging-System von Bloom (`service.envima.de/bloom-staging`), nicht auf die Produktion.
-
 ## Was die Verbindung kann
 
 | Werkzeug | Zweck |

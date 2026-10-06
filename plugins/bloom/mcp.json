@@ -3,7 +3,7 @@
   "mcpServers": {
     "bloom": {
       "type": "streamable-http",
-      "url": "https://service.envima.de/bloom-staging/mcp"
+      "url": "https://service.envima.de/bloom/mcp"
     }
   }
 }
