@@ -9,7 +9,7 @@
     {
       "name": "bloom",
       "source": "./plugins/bloom",
-      "description": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen."
+      "description": "LCA-Modelle aus Bloom im Chat auflisten, berechnen, Datenqualität prüfen und Berichte erzeugen."
     }
   ]
 }

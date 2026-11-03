@@ -25,8 +25,9 @@ Diese Seite erklärt Schritt für Schritt, wie man die Verbindung einrichtet. Ke
 https://service.envima.de/bloom/mcp
 ```
 
-Am besten jetzt markieren und kopieren. Wichtig: die Adresse endet auf `/mcp`, und es heißt `/bloom/`, nicht
-`/bloom-staging/`. Ein Tippfehler ist der häufigste Grund, warum die Verbindung nicht klappt.
+Am besten jetzt markieren und kopieren. Wichtig: die Adresse endet auf `/mcp`, und es heißt
+`service.envima.de/bloom/`, nicht `service-staging.envima.de` (das ist die Testumgebung von envima). Ein Tippfehler
+ist der häufigste Grund, warum die Verbindung nicht klappt.
 
 ## Einrichten in Claude Desktop
 
@@ -97,6 +98,8 @@ Ist die Verbindung aktiv, einfach im Chat fragen. Beispiele:
 - „Welche LCA-Modelle habe ich in Bloom?“
 - „Berechne den CO2-Fußabdruck von Fitness Tracker (Demo) je Lebenszyklusphase.“
 - „Welche Positionen verursachen die meisten Emissionen?“
+- „Wie gut ist die Datenqualität von Fitness Tracker (Demo) nach ISO 14067?“
+- „Erstelle den PCF-Bericht von Fitness Tracker (Demo) als Word-Datei.“
 
 Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das Bloom-Werkzeug benutzt werden darf. Das bestätigen.
 
@@ -107,8 +110,20 @@ Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das Bloom-Werkzeug benutz
 | `list_models` | eigene LCA-Modelle auflisten |
 | `get_model` | Phasen, Positionen, Mengen und Datenquellen eines Modells |
 | `calculate_model` | CO2-Fußabdruck bzw. Wirkungskategorien je Phase, mit den größten Positionen |
+| `get_hotspots` | die größten Treiber eines Modells, wie im One-Pager der App |
+| `list_scenarios`, `compare_scenario` | Was-wäre-wenn-Varianten eines Modells auflisten und mit dem Original vergleichen |
+| `search_datasets` | Datensätze in ecoinvent und in den eigenen Primärdaten suchen |
+| `list_saved_matches` | gespeicherte Zuordnungen von Datensätzen der eigenen Firma |
+| `get_data_quality` | Datenqualität (DQR) und Compliance-Status nach PEF, ISO 14067 und Catena-X, dazu die möglichen Berichtsformate |
+| `export_report` | Bericht als Download-Link: PCF-Bericht (Word), PCF- oder PEF-One-Pager (PDF), Catena-X (JSON), Excel, CSV |
 
-Die Werkzeuge lesen nur, sie ändern nichts in Bloom. Die Zahlen rechnet Bloom selbst, nicht das Sprachmodell.
+Die Zahlen rechnet Bloom selbst, nicht das Sprachmodell. Datenqualität und Berichte sind dieselben wie in der
+Bloom-App und beruhen auf der letzten gespeicherten Berechnung; ein Modell ohne Berechnung zuerst in Bloom rechnen
+und speichern. Ein Download-Link gilt 15 Minuten und lässt sich in der Zeit mehrmals öffnen. Er gehört nicht in
+E-Mails, weil jeder mit dem Link die Datei laden kann; danach einfach einen neuen erzeugen lassen.
+
+Die Werkzeuge ändern nichts an den Modellen. Einzige Ausnahme, genau wie in der App: Beim ersten Catena-X-Export
+eines Modells hält Bloom die Firmendaten des Ausstellers für dieses Modell fest.
 
 ## Sicherheit
 
@@ -119,7 +134,7 @@ Die Werkzeuge lesen nur, sie ändern nichts in Bloom. Die Zahlen rechnet Bloom s
 ## Wenn etwas nicht klappt
 
 - **"Verbindung fehlgeschlagen" oder es passiert nichts:** Fast immer die Adresse prüfen. Sie muss genau
-  `https://service.envima.de/bloom/mcp` lauten, mit `/mcp` am Ende und ohne `-staging`.
+  `https://service.envima.de/bloom/mcp` lauten, mit `/mcp` am Ende und nicht `service-staging.envima.de`.
 - **"No access to the LCA module" oder keine Modelle:** Das Bloom-Konto hat das LCA-Modul nicht freigeschaltet.
   Bei envima freischalten lassen.
 - **Der Connector-Knopf fehlt (Claude) oder der Entwicklermodus fehlt (ChatGPT):** Dann ist der Plan kostenlos

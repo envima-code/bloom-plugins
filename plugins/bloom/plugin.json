@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bloom",
-  "version": "0.2.0",
-  "description": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen.",
+  "version": "0.3.0",
+  "description": "LCA-Modelle aus Bloom im Chat auflisten, berechnen, Datenqualität prüfen und Berichte erzeugen.",
   "author": {
     "name": "envima GbR"
   },
@@ -12,14 +12,16 @@
     "lca",
     "pcf",
     "co2",
-    "nachhaltigkeit"
+    "nachhaltigkeit",
+    "dqr",
+    "catena-x"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Bloom",
-        "shortDescription": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen",
-        "longDescription": "Bloom ist das LCA-Werkzeug der envima GbR. Die Verbindung zeigt die eigenen Ökobilanz-Modelle, ihre Lebenszyklusphasen und Datenquellen und berechnet CO2-Fußabdruck und Wirkungskategorien mit Bloom. Die Zahlen rechnet Bloom, nicht das Sprachmodell. Nur lesend, Anmeldung mit dem Bloom-Konto, jede Person sieht nur ihre eigenen Modelle.",
+        "shortDescription": "LCA-Modelle aus Bloom auflisten, berechnen, Datenqualität prüfen und Berichte erzeugen",
+        "longDescription": "Bloom ist das LCA-Werkzeug der envima GbR. Die Verbindung zeigt die eigenen Ökobilanz-Modelle, ihre Lebenszyklusphasen und Datenquellen, berechnet CO2-Fußabdruck und Wirkungskategorien mit Bloom, prüft die Datenqualität (DQR) nach PEF, ISO 14067 und Catena-X und erzeugt Berichte (PCF-Bericht als Word, One-Pager als PDF, Catena-X-JSON, Excel, CSV) als Download-Link, der 15 Minuten gilt. Die Zahlen rechnet Bloom, nicht das Sprachmodell. Anmeldung mit dem Bloom-Konto, jede Person sieht nur ihre eigenen Modelle.",
         "developerName": "envima GbR",
         "category": "Productivity",
         "brandColor": "#639D82",
@@ -30,7 +32,8 @@
         "defaultPrompt": [
           "Welche LCA-Modelle habe ich in Bloom?",
           "Berechne den CO2-Fußabdruck von Fitness Tracker (Demo) je Lebenszyklusphase.",
-          "Welche Positionen verursachen die meisten Emissionen?"
+          "Wie gut ist die Datenqualität von Fitness Tracker (Demo) nach ISO 14067?",
+          "Erstelle den PCF-Bericht von Fitness Tracker (Demo) als Word-Datei."
         ]
       }
     }
