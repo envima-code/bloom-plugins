@@ -1,18 +1,18 @@
-# Bloom für Claude und ChatGPT
+# bloom für Claude und ChatGPT
 
-Verbindet [Bloom](https://envima.de), das LCA-Werkzeug der envima GbR, mit Claude und ChatGPT. LCA steht für
+Verbindet [bloom](https://envima.de), das LCA-Werkzeug der envima GbR, mit Claude und ChatGPT. LCA steht für
 Life Cycle Assessment, auf Deutsch Ökobilanz: die Rechnung, wie viel ein Produkt über sein Leben hinweg an
 Umwelt kostet, zum Beispiel wie viel CO2 es verursacht.
 
 Wenn die Verbindung einmal steht, kann man im Chat ganz normal fragen, zum Beispiel "Welche Ökobilanzen habe
-ich in Bloom?" oder "Berechne den CO2-Fußabdruck von meinem Produkt", und die KI holt die Antwort direkt aus
-Bloom.
+ich in bloom?" oder "Berechne den CO2-Fußabdruck von meinem Produkt", und die KI holt die Antwort direkt aus
+bloom.
 
 Diese Seite erklärt Schritt für Schritt, wie man die Verbindung einrichtet. Kein Vorwissen nötig.
 
 ## Was man vorher braucht
 
-1. Ein Bloom-Konto, das das LCA-Modul freigeschaltet hat. Ohne dieses Modul meldet die Verbindung später einen
+1. Ein bloom-Konto, das das LCA-Modul freigeschaltet hat. Ohne dieses Modul meldet die Verbindung später einen
    Fehler. Im Zweifel bei envima nachfragen.
 2. Einen bezahlten Plan bei Claude oder ChatGPT. In den kostenlosen Gratis-Versionen funktioniert die Verbindung
    nicht zuverlässig (bei ChatGPT gar nicht, bei Claude nur stark eingeschränkt).
@@ -38,15 +38,15 @@ Claude Desktop ist das Claude-Programm für Windows und Mac. Es geht genauso in 
 4. Auf den Knopf **Benutzerdefinierten Connector hinzufügen** klicken (englisch: Add custom connector). Er steht
    meist ganz unten in der Liste.
 5. Es öffnet sich ein kleines Fenster mit zwei Feldern:
-   - **Name**: hier `Bloom` eintippen.
+   - **Name**: hier `bloom` eintippen.
    - **URL** (teils "Remote MCP server URL"): hier die kopierte Adresse `https://service.envima.de/bloom/mcp`
      einfügen.
 6. Falls das Fenster "Erweiterte Einstellungen" (Advanced) anbietet mit Feldern für "Client ID" oder "Client
-   Secret": diese Felder **leer lassen**. Bloom braucht das nicht.
+   Secret": diese Felder **leer lassen**. bloom braucht das nicht.
 7. Auf **Hinzufügen** bzw. **Verbinden** klicken.
-8. Jetzt öffnet sich die Bloom-Anmeldeseite in einem Fenster oder im Browser. Mit dem eigenen Bloom-Konto
-   anmelden (Kundennummer, Benutzername und Passwort wie in Bloom selbst). Danach die Freigabe bestätigen.
-9. Fertig. Claude zeigt die Verbindung **Bloom** jetzt als aktiv an.
+8. Jetzt öffnet sich die bloom-Anmeldeseite in einem Fenster oder im Browser. Mit dem eigenen bloom-Konto
+   anmelden (Kundennummer, Benutzername und Passwort wie in bloom selbst). Danach die Freigabe bestätigen.
+9. Fertig. Claude zeigt die Verbindung **bloom** jetzt als aktiv an.
 
 Ab jetzt einfach im Chat fragen, siehe "Ausprobieren" weiter unten.
 
@@ -66,18 +66,18 @@ Hinweis: OpenAI verschiebt diesen Schalter manchmal. Findet man ihn dort nicht, 
 Sicherheit** (Security) nachsehen. In einem Firmen-Konto (Business oder Enterprise) muss ein Administrator den
 Entwicklermodus zuerst erlauben.
 
-### Schritt B: Die Bloom-Verbindung anlegen
+### Schritt B: Die bloom-Verbindung anlegen
 
 1. Wieder zu **Einstellungen → Apps & Connectors** gehen.
 2. Auf **Erstellen** bzw. **Create** klicken (teils "Add" oder ein Plus-Zeichen).
 3. Die Felder ausfüllen:
-   - **Name**: `Bloom`.
-   - **Beschreibung** (Description): zum Beispiel `Ökobilanzen aus Bloom lesen und berechnen`.
+   - **Name**: `bloom`.
+   - **Beschreibung** (Description): zum Beispiel `Ökobilanzen aus bloom lesen, berechnen und Ergebnisse speichern`.
    - **URL**: die kopierte Adresse `https://service.envima.de/bloom/mcp` einfügen.
    - **Authentifizierung** (Authentication): **OAuth** auswählen, falls gefragt wird.
 4. Auf **Speichern** bzw. **Save** klicken.
-5. Die Bloom-Anmeldeseite öffnet sich. Mit dem eigenen Bloom-Konto anmelden und die Freigabe bestätigen.
-6. Fertig. Im Chat erscheint die Bloom-Verbindung jetzt als verfügbares Werkzeug.
+5. Die bloom-Anmeldeseite öffnet sich. Mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen.
+6. Fertig. Im Chat erscheint die bloom-Verbindung jetzt als verfügbares Werkzeug.
 
 ## Einrichten in Claude Code (für Entwickler)
 
@@ -88,17 +88,19 @@ Wer Claude Code im Terminal nutzt, braucht die Adresse nicht von Hand, sondern i
 /plugin install bloom@envima
 ```
 
-Danach einmal mit dem Bloom-Konto anmelden, wenn Claude Code danach fragt.
+Danach einmal mit dem bloom-Konto anmelden, wenn Claude Code danach fragt.
 
 ## Ausprobieren
 
 Ist die Verbindung aktiv, einfach im Chat fragen. Beispiele:
 
-- „Welche LCA-Modelle habe ich in Bloom?“
+- „Welche LCA-Modelle habe ich in bloom?“
 - „Berechne den CO2-Fußabdruck von Fitness Tracker (Demo) je Lebenszyklusphase.“
 - „Welche Positionen verursachen die meisten Emissionen?“
+- „Erstelle den PEF-One-Pager für mein Modell als PDF.“ (Fehlt dafür ein gespeichertes Ergebnis, fragt die KI,
+  ob sie das Modell rechnen und speichern soll.)
 
-Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das Bloom-Werkzeug benutzt werden darf. Das bestätigen.
+Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das bloom-Werkzeug benutzt werden darf. Das bestätigen.
 
 ## Was die Verbindung kann
 
@@ -106,21 +108,29 @@ Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das Bloom-Werkzeug benutz
 |---|---|
 | `list_models` | eigene LCA-Modelle auflisten |
 | `get_model` | Phasen, Positionen, Mengen und Datenquellen eines Modells |
-| `calculate_model` | CO2-Fußabdruck bzw. Wirkungskategorien je Phase, mit den größten Positionen |
+| `calculate_model` | CO2-Fußabdruck bzw. Wirkungskategorien je Phase, mit den größten Positionen (speichert nichts) |
+| `calculate_and_save_model` | ein Modell rechnen und das Ergebnis in bloom speichern, wie der Knopf „Neu berechnen“ in der App |
+| `get_hotspots` | die größten Treiber eines Modells mit Anteil in Prozent |
+| `list_scenarios`, `compare_scenario` | Szenario-Varianten eines Modells auflisten und mit dem Original vergleichen |
+| `search_datasets`, `list_saved_matches` | Datensätze in ecoinvent und in den eigenen Primärdaten suchen, gespeicherte Zuordnungen ansehen |
+| `get_data_quality` | Datenqualität und Compliance des gespeicherten Ergebnisses, dazu die möglichen Berichte |
+| `export_report` | einen Bericht (PCF-Bericht, One-Pager, Excel, CSV, Catena-X) als Download-Link, 15 Minuten gültig |
 
-Die Werkzeuge lesen nur, sie ändern nichts in Bloom. Die Zahlen rechnet Bloom selbst, nicht das Sprachmodell.
+Fast alle Werkzeuge lesen nur. `calculate_and_save_model` speichert ein neues Berechnungsergebnis und ersetzt
+dabei das bisherige; die Modelle selbst ändert es nicht. Claude und ChatGPT fragen vorher nach. `export_report`
+erzeugt nur eine Datei. Die Zahlen rechnet bloom selbst, nicht das Sprachmodell.
 
 ## Sicherheit
 
-- Die Anmeldung läuft auf der Bloom-Seite. Das Passwort sieht weder Claude noch ChatGPT.
+- Die Anmeldung läuft auf der bloom-Seite. Das Passwort sieht weder Claude noch ChatGPT.
 - Jede Person sieht nur ihre eigenen Modelle, auch nicht die von Kolleginnen und Kollegen im selben Konto.
-- Ein Passwortwechsel in Bloom beendet die Verbindung sofort.
+- Ein Passwortwechsel in bloom beendet die Verbindung sofort.
 
 ## Wenn etwas nicht klappt
 
 - **"Verbindung fehlgeschlagen" oder es passiert nichts:** Fast immer die Adresse prüfen. Sie muss genau
   `https://service.envima.de/bloom/mcp` lauten, mit `/mcp` am Ende und ohne `-staging`.
-- **"No access to the LCA module" oder keine Modelle:** Das Bloom-Konto hat das LCA-Modul nicht freigeschaltet.
+- **"No access to the LCA module" oder keine Modelle:** Das bloom-Konto hat das LCA-Modul nicht freigeschaltet.
   Bei envima freischalten lassen.
 - **Der Connector-Knopf fehlt (Claude) oder der Entwicklermodus fehlt (ChatGPT):** Dann ist der Plan kostenlos
   oder eingeschränkt. Es braucht einen bezahlten Plan, bei Firmen-Konten zusätzlich die Freigabe durch einen

@@ -1,6 +1,6 @@
 {
   "name": "envima",
-  "description": "Plugins der envima GbR für Claude, zuerst Bloom (LCA).",
+  "description": "Plugins der envima GbR für Claude, zuerst bloom (LCA).",
   "owner": {
     "name": "envima GbR",
     "url": "https://envima.de"
@@ -9,7 +9,7 @@
     {
       "name": "bloom",
       "source": "./plugins/bloom",
-      "description": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen."
+      "description": "LCA-Modelle aus bloom im Chat auflisten, ansehen, berechnen und Ergebnisse speichern."
     }
   ]
 }
