@@ -70,8 +70,10 @@ hier die von envima.
 7. Claude warnt, das Plugin enthalte möglicherweise Komponenten, die Code ausführen. Diese Warnung zeigt Claude
    bei jedem Plugin. bloom führt auf dem eigenen Rechner nichts aus, es verbindet nur mit dem bloom-Server. Auf
    **Weiter** klicken.
-8. Wenn Claude danach fragt, mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen, wie oben in
-   Schritt 8.
+8. Anmelden: Das Plugin ist nur auf diesem Rechner installiert ("Lokal installiert"), auf der Plugin-Seite
+   steht beim Konnektor bloom deshalb "Nicht verbunden" ohne Knopf. Stattdessen im Bereich **Code** eine
+   Sitzung öffnen, ins Nachrichtenfeld `/mcp` tippen, **plugin:bloom:bloom** wählen und anmelden. Es öffnet sich
+   die bloom-Anmeldeseite, dort mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen.
 
 Meldet das Fenster in Schritt 5 rot, dass schon ein Marketplace mit demselben Namen vorhanden ist, gibt es auf
 dem Rechner schon einen Marketplace namens **envima**. **Abbrechen** klicken und in der Plugin-Liste nachsehen:
@@ -122,7 +124,7 @@ Wer Claude Code im Terminal nutzt, braucht die Adresse nicht von Hand, sondern i
 /plugin install bloom@envima
 ```
 
-Danach einmal mit dem bloom-Konto anmelden, wenn Claude Code danach fragt.
+Danach einmal anmelden: `/mcp` eintippen, **plugin:bloom:bloom** wählen und mit dem bloom-Konto anmelden.
 
 ## Ausprobieren
 
@@ -140,9 +142,20 @@ Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das bloom-Werkzeug benutz
 |---|---|
 | `list_models` | eigene LCA-Modelle auflisten |
 | `get_model` | Phasen, Positionen, Mengen und Datenquellen eines Modells |
-| `calculate_model` | CO2-Fußabdruck bzw. Wirkungskategorien je Phase, mit den größten Positionen |
+| `calculate_model` | CO2-Fußabdruck bzw. Wirkungskategorien je Phase, mit den größten Positionen, ohne zu speichern |
+| `get_hotspots` | die Positionen, die am meisten zur Umweltwirkung beitragen, wie im One-Pager in bloom |
+| `get_data_quality` | Datenqualität und Normerfüllung (PEF, ISO 14067, Catena-X) des gespeicherten Ergebnisses |
+| `list_scenarios` | die Szenarien (Was-wäre-wenn-Kopien) eines Modells auflisten |
+| `compare_scenario` | ein Szenario mit seinem Ausgangsmodell vergleichen |
+| `search_datasets` | Datensätze suchen: ecoinvent-Prozesse und eigene Lieferantendaten |
+| `list_saved_matches` | gespeicherte Zuordnungen von Bauteilen zu Datensätzen, geteilt in der eigenen Firma |
+| `calculate_and_save_model` | ein Modell rechnen und das Ergebnis in bloom speichern, wie der Rechnen-Knopf in bloom |
+| `export_report` | einen Bericht (CSV, Excel, Word, PDF, Catena-X) erzeugen und einen Download-Link geben |
 
-Die Werkzeuge lesen nur, sie ändern nichts in bloom. Die Zahlen rechnet bloom selbst, nicht das Sprachmodell.
+Fast alle Werkzeuge lesen nur. Zwei ändern etwas, genau wie die gleichen Knöpfe in bloom:
+`calculate_and_save_model` ersetzt das gespeicherte Ergebnis eines Modells, Claude ist angewiesen, vorher nachzufragen.
+`export_report` legt eine Berichtsdatei an; beim ersten Catena-X-Export eines Modells werden die Firmenangaben
+für dieses Modell festgeschrieben. Die Zahlen rechnet bloom selbst, nicht das Sprachmodell.
 
 ## Sicherheit
 
