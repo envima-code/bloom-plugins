@@ -69,9 +69,13 @@ hier die von envima.
 7. Wenn Claude danach fragt, mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen, wie oben in
    Schritt 8.
 
-Meldet das Fenster in Schritt 5 rot, dass schon ein Marketplace mit demselben Namen vorhanden ist, ist der
-envima-Marketplace bereits eingerichtet, zum Beispiel aus Claude Code. Dann **Abbrechen** klicken und mit
-Schritt 6 weitermachen.
+Meldet das Fenster in Schritt 5 rot, dass schon ein Marketplace mit demselben Namen vorhanden ist, gibt es auf
+dem Rechner schon einen Marketplace namens **envima**. **Abbrechen** klicken und in der Plugin-Liste nachsehen:
+
+- Bietet der Marketplace **envima** das Plugin **bloom** an, ist er schon richtig eingerichtet, zum Beispiel
+  aus Claude Code. Weiter mit Schritt 6.
+- Fehlt dort **bloom**, stammt der Marketplace aus einer älteren Einrichtung. Diesen Marketplace **envima**
+  entfernen und die Schritte 2 bis 5 wiederholen.
 
 Nur einen der beiden Wege nutzen, sonst taucht bloom zweimal auf. In Firmen-Konten kann ein Administrator das
 Hinzufügen fremder Marketplaces sperren. Dann den Weg oben über den benutzerdefinierten Konnektor nehmen.
