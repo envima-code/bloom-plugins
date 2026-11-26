@@ -60,12 +60,17 @@ hier die von envima.
 1. In der linken Seitenleiste auf **Plugins** klicken.
 2. Oben rechts auf **Hinzufügen** klicken (englisch: Add), dann auf **Marketplace hinzufügen** (englisch: Add
    marketplace).
-3. Die Möglichkeit wählen, einen Marketplace aus einem Repository hinzuzufügen (englisch: Add from a
-   repository). Ein Repository ist ein Projektordner auf GitHub.
-4. Ins Feld `envima-code/bloom-plugins` eintragen und bestätigen.
+3. Es öffnet sich das Fenster **Marketplace hinzufügen**. Ins Feld **URL** `envima-code/bloom-plugins`
+   eintragen. Das ist der Projektordner von envima auf GitHub.
+4. Auf **Synchronisieren** klicken. Der Hinweis oben im Fenster, nur vertrauenswürdige Marketplaces
+   hinzuzufügen, ist allgemein: Herausgeber dieses Marketplace ist envima.
 5. Im Marketplace **envima** das Plugin **bloom** auswählen und installieren.
 6. Wenn Claude danach fragt, mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen, wie oben in
    Schritt 8.
+
+Meldet das Fenster in Schritt 4 rot, dass schon ein Marketplace mit demselben Namen vorhanden ist, ist der
+envima-Marketplace bereits eingerichtet, zum Beispiel aus Claude Code. Dann **Abbrechen** klicken und mit
+Schritt 5 weitermachen.
 
 Nur einen der beiden Wege nutzen, sonst taucht bloom zweimal auf. In Firmen-Konten kann ein Administrator das
 Hinzufügen fremder Marketplaces sperren. Dann den Weg oben über den benutzerdefinierten Konnektor nehmen.
