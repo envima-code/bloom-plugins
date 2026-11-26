@@ -65,8 +65,12 @@ hier die von envima.
 4. Ins Feld **URL** `envima-code/bloom-plugins` eintragen. Das ist der Projektordner von envima.
 5. Auf **Synchronisieren** klicken. Der Hinweis oben im Fenster, nur vertrauenswürdige Marketplaces
    hinzuzufügen, ist allgemein: Herausgeber dieses Marketplace ist envima.
-6. Im Marketplace **envima** das Plugin **bloom** auswählen und installieren.
-7. Wenn Claude danach fragt, mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen, wie oben in
+6. Es erscheint das Plugin bloom "von envima GbR". Rechts daneben auf **Zu diesem Computer hinzufügen**
+   klicken.
+7. Claude warnt, das Plugin enthalte möglicherweise Komponenten, die Code ausführen. Diese Warnung zeigt Claude
+   bei jedem Plugin. bloom führt auf dem eigenen Rechner nichts aus, es verbindet nur mit dem bloom-Server. Auf
+   **Weiter** klicken.
+8. Wenn Claude danach fragt, mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen, wie oben in
    Schritt 8.
 
 Meldet das Fenster in Schritt 5 rot, dass schon ein Marketplace mit demselben Namen vorhanden ist, gibt es auf
