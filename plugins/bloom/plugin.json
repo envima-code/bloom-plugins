@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bloom",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "LCA-Modelle aus bloom im Chat auflisten, ansehen und berechnen.",
   "author": {
     "name": "envima GbR"
@@ -29,7 +29,7 @@
         "privacyPolicyURL": "https://envima.de/recht/datenschutz",
         "defaultPrompt": [
           "Welche LCA-Modelle habe ich in bloom?",
-          "Berechne den CO2-Fußabdruck von Fitness Tracker (Demo) je Lebenszyklusphase.",
+          "Berechne den CO2-Fußabdruck eines meiner Modelle je Lebenszyklusphase.",
           "Welche Positionen verursachen die meisten Emissionen?"
         ]
       }

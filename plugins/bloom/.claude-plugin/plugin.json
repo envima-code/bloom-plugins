@@ -1,7 +1,7 @@
 {
   "name": "bloom",
   "description": "LCA-Modelle aus bloom im Chat auflisten, ansehen und berechnen.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "envima GbR",
     "url": "https://envima.de"

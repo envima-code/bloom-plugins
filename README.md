@@ -131,7 +131,7 @@ Danach einmal anmelden: `/mcp` eintippen, **plugin:bloom:bloom** wählen und mit
 Ist die Verbindung aktiv, einfach im Chat fragen. Beispiele:
 
 - „Welche LCA-Modelle habe ich in bloom?“
-- „Berechne den CO2-Fußabdruck von Fitness Tracker (Demo) je Lebenszyklusphase.“
+- „Berechne den CO2-Fußabdruck von *Name des Modells* je Lebenszyklusphase.“ (den Namen aus der Liste davor einsetzen)
 - „Welche Positionen verursachen die meisten Emissionen?“
 
 Beim ersten Mal fragt Claude oder ChatGPT oft noch, ob das bloom-Werkzeug benutzt werden darf. Das bestätigen.
