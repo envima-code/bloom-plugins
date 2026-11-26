@@ -51,6 +51,25 @@ etwas anders.
 
 Ab jetzt einfach im Chat fragen, siehe "Ausprobieren" weiter unten.
 
+### Alternativ: als Plugin aus dem envima-Marketplace
+
+Statt die Adresse von Hand einzutragen, kann man das fertige bloom-Plugin installieren. Ein Plugin ist ein
+Paket, das die Verbindung und Hinweise für Claude mitbringt. Ein Marketplace ist eine Sammlung solcher Plugins,
+hier die von envima.
+
+1. In der linken Seitenleiste auf **Plugins** klicken.
+2. Oben rechts auf **Hinzufügen** klicken (englisch: Add), dann auf **Marketplace hinzufügen** (englisch: Add
+   marketplace).
+3. Die Möglichkeit wählen, einen Marketplace aus einem Repository hinzuzufügen (englisch: Add from a
+   repository). Ein Repository ist ein Projektordner auf GitHub.
+4. Ins Feld `envima-code/bloom-plugins` eintragen und bestätigen.
+5. Im Marketplace **envima** das Plugin **bloom** auswählen und installieren.
+6. Wenn Claude danach fragt, mit dem eigenen bloom-Konto anmelden und die Freigabe bestätigen, wie oben in
+   Schritt 8.
+
+Nur einen der beiden Wege nutzen, sonst taucht bloom zweimal auf. In Firmen-Konten kann ein Administrator das
+Hinzufügen fremder Marketplaces sperren. Dann den Weg oben über den benutzerdefinierten Konnektor nehmen.
+
 ## Einrichten in ChatGPT
 
 Bei ChatGPT muss man zuerst einmalig den Entwicklermodus anschalten, danach die Verbindung anlegen.
