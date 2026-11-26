@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bloom",
   "version": "0.2.0",
-  "description": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen.",
+  "description": "LCA-Modelle aus bloom im Chat auflisten, ansehen und berechnen.",
   "author": {
     "name": "envima GbR"
   },
@@ -17,9 +17,9 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Bloom",
-        "shortDescription": "LCA-Modelle aus Bloom im Chat auflisten, ansehen und berechnen",
-        "longDescription": "Bloom ist das LCA-Werkzeug der envima GbR. Die Verbindung zeigt die eigenen Ökobilanz-Modelle, ihre Lebenszyklusphasen und Datenquellen und berechnet CO2-Fußabdruck und Wirkungskategorien mit Bloom. Die Zahlen rechnet Bloom, nicht das Sprachmodell. Nur lesend, Anmeldung mit dem Bloom-Konto, jede Person sieht nur ihre eigenen Modelle.",
+        "displayName": "bloom",
+        "shortDescription": "LCA-Modelle aus bloom im Chat auflisten, ansehen und berechnen",
+        "longDescription": "bloom ist das LCA-Werkzeug der envima GbR. Die Verbindung zeigt die eigenen Ökobilanz-Modelle, ihre Lebenszyklusphasen und Datenquellen und berechnet CO2-Fußabdruck und Wirkungskategorien mit bloom. Die Zahlen rechnet bloom, nicht das Sprachmodell. Nur lesend, Anmeldung mit dem bloom-Konto, jede Person sieht nur ihre eigenen Modelle.",
         "developerName": "envima GbR",
         "category": "Productivity",
         "brandColor": "#639D82",
@@ -28,7 +28,7 @@
         "websiteURL": "https://envima.de",
         "privacyPolicyURL": "https://envima.de/recht/datenschutz",
         "defaultPrompt": [
-          "Welche LCA-Modelle habe ich in Bloom?",
+          "Welche LCA-Modelle habe ich in bloom?",
           "Berechne den CO2-Fußabdruck von Fitness Tracker (Demo) je Lebenszyklusphase.",
           "Welche Positionen verursachen die meisten Emissionen?"
         ]
